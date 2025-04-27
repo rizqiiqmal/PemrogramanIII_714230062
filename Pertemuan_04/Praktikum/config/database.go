@@ -3,9 +3,10 @@ package config
 import (
 	"context"
 	"fmt"
+	"os"
+
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
-	"os"
 )
 
 var DBName = "db2025"
