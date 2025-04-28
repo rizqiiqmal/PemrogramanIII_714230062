@@ -24,7 +24,7 @@ func init() {
 func main() {
 	// Initialize the Fiber app
 	app := fiber.New()
-	app.Use(logger.New())
+		app.Use(logger.New())
 
 	app.Use(cors.New(cors.Config{
 		AllowOrigins:     strings.Join(config.GetAllowedOrigins(), ","),
